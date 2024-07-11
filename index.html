@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Discover the best VR gaming experiences in Montreal with GameWave. Immerse yourself in cutting-edge virtual reality games and join a vibrant community of gamers. Explore thrilling adventures and state-of-the-art VR technology in the heart of Montreal." />
+    <title>GameWave | VR Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">Game<span>Wave</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><button type="button">Register</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <h1>Discover new worlds with GameWave</h1>
+            <p>Step Into the Future of Gaming</p>
+            <button type="button">Get Started</button>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector(".menu");
+
+        function toggleMenu() {
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+            menu.style.height = "100vh";
+        }
+
+        window.addEventListener('resize', () => {
+        if (window.innerWidth >= 985) {
+            menu.style.display = 'flex'
+        } else {
+            menu.style.display = 'none'
+        }
+        });
+    </script>
+
+</body>
+</html>
